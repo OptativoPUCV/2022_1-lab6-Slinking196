@@ -94,9 +94,20 @@ int repetidosPorSubMatriz(size_t k, Node *n) {
   return 1;
 }
 
+void mostrarMatriz(Node *n) {
+  int i,j;
+
+  for (i = 0; i < 9; i++) {
+    for (j = 0; j < 9; j++) {
+      printf("%d ", n->sudo[i][j]);
+    }
+    printf("\n");
+  }
+}
+
 int is_valid(Node* n){
     size_t cont;
-
+    mostrarMatriz(n);
     for (cont = 0; cont < 9; cont++) {
       if (repetidosPorFila(cont, n) == 0) return 0;
       printf("xd1\n");
@@ -107,6 +118,7 @@ int is_valid(Node* n){
     }
     return 0;
 }
+
 
 
 List* get_adj_nodes(Node* n){
