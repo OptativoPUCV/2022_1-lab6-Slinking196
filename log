@@ -811,3 +811,9 @@ caaded2
  tests:  6|2
 total_score: 45/70
 4a9dad2
+15 May 2022 23:32:13: 
+ sudoku.c | 27 ++-------------------------
+ 1 file changed, 2 insertions(+), 25 deletions(-)
+ tests:  6|2
+total_score: 45/70
+e07c48d
