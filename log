@@ -28,3 +28,20 @@ test.c:7:8: error: '_strdup' redeclared without dllimport attribute: previous dl
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9e3740d
+15 May 2022 20:31:04: 
+ sudoku.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:57:34: error: passing argument 2 of 'pushBack' makes pointer from integer without a cast [-Werror=int-conversion]
+   57 |         pushBack(list, n->sudo[i][j]);
+      |                        ~~~~~~~~~~^~~
+      |                                  |
+      |                                  int
+In file included from test.c:4:
+list.h:23:33: note: expected 'void *' but argument is of type 'int'
+   23 | void pushBack(List* list, void* data);
+      |                           ~~~~~~^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+def79c7
