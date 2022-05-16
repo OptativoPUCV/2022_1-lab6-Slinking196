@@ -58,7 +58,7 @@ List* get_adj_nodes(Node* n){
         n->sudo[0][i] = cont;
         cont++;
       } 
-      pushFront(list, n->sudo[0][i]);
+      pushFront(list, (int *)n->sudo[0][i]);
     }
 
     return list;

@@ -101,3 +101,14 @@ list.h:22:34: note: expected 'void *' but argument is of type 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 b640db3
+15 May 2022 20:43:17: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:61:23: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   61 |       pushFront(list, (int *)n->sudo[0][i]);
+      |                       ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+fb93742
