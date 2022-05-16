@@ -264,3 +264,14 @@ sudoku.c:80:1: error: control reaches end of non-void function [-Werror=return-t
 cc1.exe: all warnings being treated as errors
 Compilation failed
 91c63cc
+15 May 2022 21:43:41: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function 'is_valid':
+sudoku.c:86:82: error: implicit declaration of function 'repetidosPorSubMatriz' [-Werror=implicit-function-declaration]
+   86 |       if (repetidosPorFila(cont, n) != 0 && repetidosPorColumna(cont, n) != 0 && repetidosPorSubMatriz(cont, n) != 0) return 0;
+      |                                                                                  ^~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+fc72d88

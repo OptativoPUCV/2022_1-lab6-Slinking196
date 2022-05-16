@@ -67,7 +67,7 @@ int repetidosPorFila(size_t f, Node *n) {
   return 1;
 }
 
-int repetidosPorSubMatriz(size_t k, Node *n) {
+/*int repetidosPorSubMatriz(size_t k, Node *n) {
   int p; 
   for(p=0;p<9;p++){
     int i=3*(k/3) + (p/3);
@@ -77,7 +77,7 @@ int repetidosPorSubMatriz(size_t k, Node *n) {
       printf("\n");
     }
   }
-}
+}*/
 
 int is_valid(Node* n){
     size_t cont;
