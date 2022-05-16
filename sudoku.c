@@ -87,7 +87,7 @@ int repetidosPorSubMatriz(size_t k, Node *n) {
   
   for (p = 0; p < 9; p++) {
     for(cont = 1; cont < 9; cont++) {
-      //printf("a = %zd y b = %zd", vector[p], vector[cont]);
+      printf("a = %zd y b = %d", vector[p], vector[cont]);
       if(vector[p] == vector[cont]) return 0;
     }
   }
@@ -97,9 +97,10 @@ int repetidosPorSubMatriz(size_t k, Node *n) {
 int is_valid(Node* n){
     size_t cont;
     for (cont = 0; cont < 9; cont++) {
-      if (repetidosPorFila(cont, n) == 0) return 0;
+      if (repetidosPorFila(cont, n) == 0 && repetidosPorColumna(cont, n) == 0 && repetidosPorSubMatriz(cont, n) == 0) return 0;
+      /*if (repetidosPorFila(cont, n) == 0) return 0;
       if (repetidosPorColumna(cont, n) == 0) return 0;
-      if (repetidosPorSubMatriz(cont, n) == 0) return 0;
+      if (repetidosPorSubMatriz(cont, n) == 0) return 0;*/
     }
     return 1;
 }
