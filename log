@@ -124,3 +124,14 @@ total_score: 0/70
  tests:  0|5
 total_score: 0/70
 c5b1cb7
+15 May 2022 20:52:17: 
+ sudoku.c | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:55:12: error: unused variable 'cont' [-Werror=unused-variable]
+   55 |     size_t cont = 1, i, j;
+      |            ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+9c2ff4f

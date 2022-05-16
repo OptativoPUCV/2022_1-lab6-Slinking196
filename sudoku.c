@@ -56,14 +56,10 @@ List* get_adj_nodes(Node* n){
 
     for (i = 0; i < 9; i++) {
       for (j = 0; j < 9; j++) {
-        printf("%d\n", n->sudo[i][j]);
-        if (n->sudo[i][j] == 0) {
-          n->sudo[i][j] = cont;
-          cont++;
+        if (n->sudo[i][j] != 0) {
+          newNode = copy(n);
+          pushFront(list, newNode);
         } 
-        printf("%d\n", n->sudo[i][j]);
-        newNode = copy(n);
-        pushFront(list, newNode);
       }
     }
 
