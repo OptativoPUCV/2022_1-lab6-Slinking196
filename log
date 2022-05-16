@@ -152,3 +152,9 @@ total_score: 0/70
  1 file changed, 4 insertions(+), 1 deletion(-)
  tests:  0|0
 3b7f95a
+15 May 2022 21:02:57: 
+ sudoku.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+ tests:  0|5
+total_score: 0/70
+fa29221

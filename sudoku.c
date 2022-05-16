@@ -57,13 +57,10 @@ List* get_adj_nodes(Node* n){
     for (i = 0; i < 9; i++) {
       for (j = 0; j < 9; j++) {
         if (n->sudo[i][j] == 0) {
-          for (cont = 1; cont < 10; cont++) {
+          for (cont = 1; cont <= 9; cont++) {
             newNode = copy(n);
             newNode->sudo[i][j] = cont;
-            if (is_valid(newNode)) {
-              pushFront(list, newNode);
-              return list;
-            }
+            return list;
           }
         }
       }
