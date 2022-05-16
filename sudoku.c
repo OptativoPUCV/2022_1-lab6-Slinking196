@@ -106,8 +106,6 @@ int is_valid(Node* n){
     return 1;
 }
 
-
-
 List* get_adj_nodes(Node* n){
     List* list=createList();
     Node *newNode;
@@ -119,9 +117,9 @@ List* get_adj_nodes(Node* n){
           for (cont = 1; cont <= 9; cont++) {
             newNode = copy(n);
             newNode->sudo[i][j] = cont;
-            //if(is_valid(newNode)) {
-            pushBack(list, newNode);
-            //}
+            if(is_valid(newNode)) {
+              pushBack(list, newNode);
+            }
           }
           return list;
         }
