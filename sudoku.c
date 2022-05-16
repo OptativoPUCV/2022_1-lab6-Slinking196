@@ -69,14 +69,23 @@ int repetidosPorFila(size_t f, Node *n) {
 }
 
 int repetidosPorSubMatriz(size_t k, Node *n) {
-  int p; 
+  int p, cont; 
+  size_t *vector = (size_t *) calloc(9, sizeof(size_t));
+
   for (p = 0; p < 9; p++){
     int i = 3 * (k / 3) + (p / 3);
     int j = 3 * (k % 3) + (p % 3);
+    vector[p] = n->sudo[i][j];
     printf("%d ", n->sudo[i][j]);
    
     if(p % 3 == 2) { 
       printf("\n");
+    }
+  }
+  
+  for (p = 0; p < 9; p++) {
+    for(cont = 0; cont < 9; cont++) {
+      if(vector[p] == vector[cont]) return 0;
     }
   }
   return 1;
