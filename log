@@ -242,3 +242,14 @@ sudoku.c:80:1: error: control reaches end of non-void function [-Werror=return-t
 cc1.exe: all warnings being treated as errors
 Compilation failed
 26f4cc2
+15 May 2022 21:42:20: 
+ sudoku.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function 'repetidosPorSubMatriz':
+sudoku.c:80:1: error: control reaches end of non-void function [-Werror=return-type]
+   80 | }
+      | ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ea4c077
