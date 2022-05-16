@@ -54,7 +54,7 @@ List* get_adj_nodes(Node* n){
     size_t i, j;
     for (i = 0; i < 9; i++) {
       for (j = 0; j < 9; j++) {
-        pushBack(list, (size_t *)n->sudo[i][j]);
+        if (n->sudo[i][j] != 0) pushBack(list, (size_t *)n->sudo[i][j]);
       }
     }
 

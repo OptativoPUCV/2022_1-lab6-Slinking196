@@ -67,3 +67,14 @@ sudoku.c:57:24: error: cast to pointer from integer of different size [-Werror=i
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2ff8718
+15 May 2022 20:33:24: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:57:48: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   57 |         if (n->sudo[i][j] != 0) pushBack(list, (size_t *)n->sudo[i][j]);
+      |                                                ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2a51c71
