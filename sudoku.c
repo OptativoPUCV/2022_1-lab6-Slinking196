@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 #include "list.h"
 
 
@@ -73,6 +74,7 @@ int repetidosPorSubMatriz(size_t k, Node *n) {
     int i = 3 * (k / 3) + (p / 3);
     int j = 3 * (k % 3) + (p % 3);
     printf("%d ", n->sudo[i][j]);
+   
     if(p % 3 == 2) { 
       printf("\n");
     }
