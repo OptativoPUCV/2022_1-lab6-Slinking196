@@ -109,7 +109,7 @@ int is_valid(Node* n){
     size_t cont;
     mostrarMatriz(n);
     for (cont = 0; cont < 9; cont++) {
-      if (repetidosPorFila(cont, n) == 0) return 0;
+      if (repetidosPorFila(cont, n) != 0) return 0;
       printf("xd1\n");
       if (repetidosPorColumna(cont, n) != 0) return 1;
       printf("xd2\n");
