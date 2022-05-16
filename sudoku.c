@@ -64,6 +64,7 @@ List* get_adj_nodes(Node* n){
             return list;
           }
         }
+        newNode = copy(n);
         pushBack(list, n);
       }
     }
