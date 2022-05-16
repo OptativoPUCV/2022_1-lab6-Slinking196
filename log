@@ -78,3 +78,9 @@ sudoku.c:57:48: error: cast to pointer from integer of different size [-Werror=i
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2a51c71
+15 May 2022 20:34:42: 
+ sudoku.c | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+ tests:  0|5
+total_score: 0/70
+bd270ba
