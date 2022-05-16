@@ -275,3 +275,9 @@ sudoku.c:86:82: error: implicit declaration of function 'repetidosPorSubMatriz' 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 fc72d88
+15 May 2022 21:44:03: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+67df1ba
