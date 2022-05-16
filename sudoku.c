@@ -119,7 +119,6 @@ List* get_adj_nodes(Node* n){
             newNode->sudo[i][j] = cont;
             if(is_valid(newNode) == 1) {
               pushBack(list, newNode);
-              return list;
             }
           }
           return list;
