@@ -60,7 +60,10 @@ List* get_adj_nodes(Node* n){
           for (cont = 1; cont < 10; cont++) {
             newNode = copy(n);
             newNode->sudo[i][j] = cont;
-            if (is_valid(newNode)) return list;
+            if (is_valid(newNode)) {
+              pushFront(list, newNode);
+              return list;
+            }
           }
         }
       }
