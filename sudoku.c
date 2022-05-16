@@ -68,12 +68,12 @@ int repetidosPorFila(size_t f, Node *n) {
     if (n->sudo[f][i] == 0) continue;
     for (j = i + 1; j < 9; j++) {
       if (n->sudo[f][j] == 0) continue;
-      printf("a = %d y b = %d\n", n->sudo[f][i], n->sudo[f][j]);
+      //printf("a = %d y b = %d\n", n->sudo[f][i], n->sudo[f][j]);
       if(n->sudo[f][i] == n->sudo[f][j]) {
         return 0;
-        printf("xd");
+        //printf("xd");
       }
-      printf("xd2\n");
+      //printf("xd2\n");
     }
   }
   return 1;
