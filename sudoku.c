@@ -51,14 +51,18 @@ int is_valid(Node* n){
 
 List* get_adj_nodes(Node* n){
     List* list=createList();
-    size_t cont = 1, i;
+    size_t cont = 1, i, j;
 
     for (i = 0; i < 9; i++) {
-      if (n->sudo[0][i] == 0) {
-        n->sudo[0][i] = cont;
-        cont++;
-      } 
-      pushFront(list, (int *)n->sudo[0][i]);
+      for (j = 0; j < 9; j++) {
+        printf("%d\n", n->sudo[i][j]);
+        if (n->sudo[i][j] == 0) {
+          n->sudo[i][j] = cont;
+          cont++;
+        } 
+        printf("%d\n", n->sudo[i][j]);
+        pushFront(list, n);
+      }
     }
 
     return list;
