@@ -152,6 +152,7 @@ Node* DFS(Node* initial, int* cont){
       size++;
       aux = next(list);
     }
+    free(aux);
     (*cont)++;
   }
   return NULL;
