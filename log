@@ -287,3 +287,14 @@ total_score: 0/70
  tests:  2|4
 total_score: 15/70
 bbe1047
+15 May 2022 21:45:56: 
+ sudoku.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function 'repetidosPorSubMatriz':
+sudoku.c:80:1: error: control reaches end of non-void function [-Werror=return-type]
+   80 | }
+      | ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5dfb079
