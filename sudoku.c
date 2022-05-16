@@ -46,7 +46,7 @@ void print_node(Node* n){
 
 int repetidosPorColumna(size_t c, Node *n) {
   size_t i, j;
-    
+    print_node(n);
     for(i = 0; i < 9; i++) {
       if (n->sudo[c][i] == 0) continue;
       for (j = i + 1; j < 9; j++) {
