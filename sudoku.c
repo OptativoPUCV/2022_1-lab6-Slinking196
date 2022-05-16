@@ -48,7 +48,9 @@ int repetidosPorColumna(size_t c, Node *n) {
   size_t i, j;
     
     for(i = 0; i < 9; i++) {
+      if (n->sudo[i][c] == 0) continue;
       for (j = 0; i < 9; j++) {
+        if (n->sudo[j][c] == 0) continue;
         if(n->sudo[i][c] == n->sudo[j][c]) return 0;
       }
     }
