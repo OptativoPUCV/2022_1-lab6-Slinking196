@@ -73,6 +73,7 @@ int repetidosPorFila(size_t f, Node *n) {
         return 0;
         printf("xd");
       }
+      printf("xd2\n");
     }
   }
   return 1;
