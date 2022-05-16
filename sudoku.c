@@ -43,8 +43,46 @@ void print_node(Node* n){
     printf("\n");
 }
 
-int is_valid(Node* n){
+int repetidosPorColumna(size_t c, Node *n) {
+  size_t i, j;
+    
+    for(i = 0; i < 9; i++) {
+      for (j = 0; i < 9; j++) {
+        if(n->sudo[i][c] == n->sudo[j][c]) return 0;
+      }
+    }
 
+    return 1;
+}
+
+int repetidosPorFila(size_t f, Node *n) {
+  size_t i, j;
+  
+  for(i = 0; i < 9; i++) {
+    for (j = 0; i < 9; j++) {
+      if(n->sudo[f][i] == n->sudo[f][j]) return 0;
+    }
+  }
+
+  return 1;
+}
+
+int repetidosPorSubMatriz(size_t k, Node *n) {
+  int p; 
+  for(p=0;p<9;p++){
+      int i=3*(k/3) + (p/3) ;
+      int j=3*(k%3) + (p%3) ;
+      printf("%d ", n->sudo[i][j]);
+      if(p%3 == 2) printf("\n");
+  }
+}
+
+int is_valid(Node* n){
+    size_t cont;
+
+    for (cont = 0; cont < 9; cont++) {
+      if (repetidosPorFila(cont, n) != 0 && repetidosPorColumna(cont, n) != 0 && repetidosPorSubMatriz(cont, n) != 0);
+    }
     return 1;
 }
 
