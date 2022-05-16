@@ -90,7 +90,7 @@ int repetidosPorSubMatriz(size_t k, Node *n) {
   }
   printf("xd\n");
   for (p = 0; p < 9; p++) {
-    for(cont = 1; cont < 9; cont++) {
+    for(cont = p + 1; cont < 9; cont++) {
       printf("a = %zd y b = %zd\n", vector[p], vector[cont]);
       if(vector[p] == vector[cont]) return 0;
     }
