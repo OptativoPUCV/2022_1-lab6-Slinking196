@@ -51,6 +51,7 @@ int repetidosPorColumna(size_t c, Node *n) {
       if (n->sudo[c][i] == 0) continue;
       for (j = i + 1; j < 9; j++) {
         if (n->sudo[j][i] == 0) continue;
+        printf("a = %d y b = %d", n->sudo[c][i], n->sudo[j][i]);
         if(n->sudo[c][i] == n->sudo[j][i]) { 
           //printf("xd");
           printf("Columnas return 0\n");
