@@ -357,3 +357,9 @@ total_score: 15/70
  tests:  6|2
 total_score: 45/70
 a4368e3
+15 May 2022 21:58:08: 
+ sudoku.c | 71 ++--------------------------------------------------------------
+ 1 file changed, 2 insertions(+), 69 deletions(-)
+ tests:  2|4
+total_score: 15/70
+1a3950d

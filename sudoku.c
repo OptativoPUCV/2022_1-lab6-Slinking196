@@ -64,7 +64,7 @@ int repetidosPorFila(size_t f, Node *n) {
       if(n->sudo[f][i] == n->sudo[f][j]) return 0;
     }
   }
-
+  printf("xd");
   return 1;
 }
 
@@ -91,80 +91,13 @@ int repetidosPorSubMatriz(size_t k, Node *n) {
   return 1;
 }
 
-/*int is_valid(Node* n){
+int is_valid(Node* n){
     size_t cont;
 
     for (cont = 0; cont < 9; cont++) {
       if (repetidosPorFila(cont, n) != 0 && repetidosPorColumna(cont, n) != 0 && repetidosPorSubMatriz(cont, n) != 0) return 0;
     }
     return 1;
-}*/
-
-int is_valid(Node* n)
-{
-  int nro = 0;
-  for (int f = 0 ; f <= 8 ; f++)
-  {
-    int *fila = (int *) calloc (10 , sizeof(int));
-    for (int k = 0 ; k <= 8 ; k++)
-    {
-      nro = n->sudo[f][k];
-      if (fila[nro] == 1)
-      {
-        return 0;
-      }
-
-      if (fila[nro] == 0 && nro != 0)
-      {
-        fila[nro] = 1;
-      }
-    }
-  }
-
-  for (int k = 0 ; k <= 8 ; k++)
-  {
-    int *col = (int *) calloc (10 , sizeof(int));
-    for (int f = 0 ; f <= 8 ; f++)
-    {
-      nro = n->sudo[f][k];
-      if (col[nro] == 1)
-      {
-        return 0;
-      }
-
-      if (col[nro] == 0 && nro != 0)
-      {
-        col[nro] = 1;
-      }
-    }
-  }
-
-  //podria haber usado lo que propuso el profesor pero bueno
-  for (int f = 0 ; f <= 6 ; f += 3)
-  {
-    for (int k = 0 ; k <= 6 ; k += 3)
-    {
-      int *subm = (int *) calloc (10 , sizeof(int));
-      for (int subF = f ; subF <= f + 2 ; subF++)
-      {
-        for (int subK = k ; subK <= k + 2 ; subK++)
-        {
-          nro = n->sudo[subF][subK];
-          if (subm[nro] == 1)
-          {
-            return 0;
-          }
-
-          if (subm[nro] == 0 && nro != 0)
-          {
-            subm[nro] = 1;
-          }
-        }
-      }
-    }
-  }
-
-  return 1;
 }
 
 
