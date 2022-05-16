@@ -64,7 +64,10 @@ int repetidosPorFila(size_t f, Node *n) {
     for (j = 1; i < 9; j++) {
       if (n->sudo[f][j] == 0) continue;
       printf("a = %d y b = %d\n", n->sudo[f][i], n->sudo[f][j]);
-      if(n->sudo[f][i] == n->sudo[f][j]) return 0;
+      if(n->sudo[f][i] == n->sudo[f][j]) {
+        printf("xd");
+        return 0;
+      }
     }
   }
   printf("xd");

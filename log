@@ -473,3 +473,9 @@ sudoku.c:113:16: error: format '%d' expects argument of type 'int', but argument
 cc1.exe: all warnings being treated as errors
 Compilation failed
 28518ec
+15 May 2022 22:20:49: 
+ sudoku.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+ tests:  2|4
+total_score: 15/70
+8161cfc
