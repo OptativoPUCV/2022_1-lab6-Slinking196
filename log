@@ -627,3 +627,23 @@ f36885a
  tests:  2|4
 total_score: 15/70
 f25bd25
+15 May 2022 22:53:39: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+sudoku.c: In function 'repetidosPorSubMatriz':
+sudoku.c:90:20: error: format '%d' expects argument of type 'int', but argument 2 has type 'size_t' {aka 'long long unsigned int'} [-Werror=format=]
+   90 |       printf("a = %d y b = %d", vector[p], vector[cont]);
+      |                   ~^            ~~~~~~~~~
+      |                    |                  |
+      |                    int                size_t {aka long long unsigned int}
+      |                   %lld
+sudoku.c:90:29: error: format '%d' expects argument of type 'int', but argument 3 has type 'size_t' {aka 'long long unsigned int'} [-Werror=format=]
+   90 |       printf("a = %d y b = %d", vector[p], vector[cont]);
+      |                            ~^              ~~~~~~~~~~~~
+      |                             |                    |
+      |                             int                  size_t {aka long long unsigned int}
+      |                            %lld
+cc1.exe: all warnings being treated as errors
+Compilation failed
+581d088
