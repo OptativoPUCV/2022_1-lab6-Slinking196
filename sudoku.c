@@ -84,6 +84,7 @@ int is_valid(Node* n){
     size_t cont;
 
     for (cont = 0; cont < 9; cont++) {
+      repetidosPorSubMatriz(cont, n);
       if (repetidosPorFila(cont, n) != 0 && repetidosPorColumna(cont, n) != 0 && repetidosPorSubMatriz(cont, n) != 0) return 0;
     }
     return 1;
