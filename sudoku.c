@@ -69,7 +69,6 @@ int repetidosPorFila(size_t f, Node *n) {
     if (n->sudo[f][i] == 0) continue;
     for (j = i + 1; j < 9; j++) {
       if (n->sudo[f][j] == 0) continue;
-      //printf("a = %d y b = %d\n", n->sudo[f][i], n->sudo[f][j]);
       if(n->sudo[f][i] == n->sudo[f][j]) return 0;
     }
   }
@@ -88,7 +87,7 @@ int repetidosPorSubMatriz(size_t k, Node *n) {
   
   for (p = 0; p < 9; p++) {
     for(cont = 1; cont < 9; cont++) {
-      //printf("a = %zd y b = %zd\n", vector[p], vector[cont]);
+      printf("a = %zd y b = %zd", vector[p], vector[cont]);
       if(vector[p] == vector[cont]) return 0;
     }
   }
