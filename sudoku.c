@@ -111,7 +111,6 @@ List* get_adj_nodes(Node* n){
             newNode = copy(n);
             newNode->sudo[i][j] = cont;
             if(is_valid(newNode) == 1) {
-              print_node(newNode);
               pushBack(list, newNode);
             }
           }
