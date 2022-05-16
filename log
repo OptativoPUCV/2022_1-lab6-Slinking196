@@ -135,3 +135,9 @@ sudoku.c:55:12: error: unused variable 'cont' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9c2ff4f
+15 May 2022 20:52:30: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+6904270
