@@ -168,3 +168,14 @@ fa29221
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 0317e3e
+15 May 2022 21:05:24: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+test.c: In function 'get_adj_nodes':
+sudoku.c:67:9: error: 'newNode' may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   67 |         pushBack(list, newNode);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3427d20
