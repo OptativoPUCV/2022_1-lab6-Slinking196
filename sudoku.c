@@ -88,7 +88,7 @@ int repetidosPorSubMatriz(size_t k, Node *n) {
     int j = 3 * (k % 3) + (p % 3);
     vector[p] = n->sudo[i][j];
   }
-  printf("xd");
+  printf("xd\n");
   for (p = 0; p < 9; p++) {
     for(cont = 1; cont < 9; cont++) {
       printf("a = %zd y b = %zd\n", vector[p], vector[cont]);
